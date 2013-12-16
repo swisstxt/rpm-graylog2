@@ -10,7 +10,7 @@ clean:
 
 download-upstream:
 	./download graylog2-server-${VERSION}.tar.gz https://github.com/Graylog2/graylog2-server/releases/download/${VERSION}/graylog2-server-${VERSION}.tar.gz
-	./download graylog2-web-interface-${VERSION}.tar.gz https://github.com/Graylog2/graylog2-web-interface/archive/${VERSION}.tar.gz
+	./download graylog2-web-interface-${VERSION}.tar.gz https://github.com/Graylog2/graylog2-web-interface/releases/download/${VERSION}/graylog2-web-interface-${VERSION}.tar.gz
 
 build: clean download-upstream
 	cp -r ./SPECS/* ./rpmbuild/SPECS/
